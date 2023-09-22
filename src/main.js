@@ -16,3 +16,13 @@ const homeHeight = home.offsetHeight;
 document.addEventListener('scroll', function () {
   home.style.opacity = 1 - window.scrollY / homeHeight;
 });
+
+// 홈 상단으로 올려주는 화살표의 색을 투명에서 홈의 중간 높이쯤 스크롤을 내렸을 때 보이도록 스타일링
+const arrow = document.querySelector('.arrow-up');
+document.addEventListener('scroll', function () {
+  if (window.scrollY > homeHeight / 2) {
+    arrow.style.opacity = 1;
+  } else {
+    arrow.style.opacity = 0;
+  }
+});
