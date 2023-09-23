@@ -26,3 +26,15 @@ document.addEventListener('scroll', function () {
     arrow.style.opacity = 0;
   }
 });
+
+// 모바일 스크린 크기일 때, 헤더 대신 토글 버튼이 보이고 누르면 메뉴 뜨게 스타일링
+const navbarMenu = document.querySelector('.header__menu');
+const navbarToggle = document.querySelector('.header__toggle');
+navbarToggle.addEventListener('click', () => {
+  navbarMenu.classList.toggle('active');
+});
+
+// 헤더 메뉴의 하나를 클릭하면 메뉴가 자동으로 닫히게 해주는 기능
+navbarMenu.addEventListener('click', () => {
+  navbarMenu.classList.remove('active');
+});
