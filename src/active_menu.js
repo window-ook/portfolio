@@ -1,11 +1,3 @@
-// 구현 계획
-// 1. 모든 섹션 요소들과 메뉴 아이템들을 가지고 온다.
-// 2. Intersection Observer를 사용해서 모든 섹션들을 관찰해야 한다.
-// 3. 보여지는 섹션에 해당하는 메뉴 아이템을 활성화 시킨다.
-// 보여지는 섹션:
-// --> 다수의 섹션이 동시에 보여진다면, 가장 첫번째 섹션을 선택한다.
-// --> 마지막 contact 섹션이 보여진다면, 가장 마지막 섹션을 선택한다.
-
 const sectionIds = [
   '#home',
   '#about',
@@ -14,16 +6,21 @@ const sectionIds = [
   '#testimonial',
   '#contact',
 ];
-const sections = sectionIds.map((id) => document.querySelector(id));
-const navItems = sectionIds.map((id) =>
-  document.querySelector(`[href="${id}"]`)
+const sections = sectionIds.map((id) => document.querySelector(id)); // 섹션의 id
+const navItems = sectionIds.map(
+  (id) => document.querySelector(`[href="${id}"]`) // 네비게이션 바의 a 태그
 );
 const visibleSections = sectionIds.map(() => false);
+let activeNavItem = navItems[0];
 
-const options = {};
+const options = {
+  rootMargin: '-20% 0px 0px 0px',
+  threshold: [0, 0.98],
+};
 const observer = new IntersectionObserver(observerCallback, options);
 sections.forEach((section) => observer.observe(section));
 
+// 옵저버 콜백
 function observerCallback(entries) {
   let selectLastone;
   entries.forEach((entry) => {
@@ -32,7 +29,7 @@ function observerCallback(entries) {
     selectLastone =
       index === sectionIds.length - 1 &&
       entry.isIntersecting &&
-      entry.intersectionRatio >= 0.99;
+      entry.intersectionRatio >= 0.95;
   });
   console.log(visibleSections);
   console.log('무조건 라스트 섹션!!', selectLastone);
@@ -40,10 +37,19 @@ function observerCallback(entries) {
   const navIndex = selectLastone
     ? sectionIds.length - 1
     : findFirstIntersecting(visibleSections);
-  console.log(sectionIds[navIndex]);
+  selectNavItem(navIndex);
+}
 
-  function findFirstIntersecting(intersections) {
-    const index = intersections.indexOf(true);
-    return index >= 0 ? index : 0;
-  }
+// 첫번째 인터섹션
+function findFirstIntersecting(intersections) {
+  const index = intersections.indexOf(true);
+  return index >= 0 ? index : 0;
+}
+
+function selectNavItem(index) {
+  const navItem = navItems[index];
+  if (!navItem) return;
+  activeNavItem.classList.remove('active');
+  activeNavItem = navItem;
+  activeNavItem.classList.add('active');
 }
