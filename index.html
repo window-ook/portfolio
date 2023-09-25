@@ -28,12 +28,15 @@
       src="https://kit.fontawesome.com/7d8919f8b4.js"
       crossorigin="anonymous"
     ></script>
+    <!-- Type it -->
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css" />
     <!-- Javascript -->
     <script type="module" src="src/main.js" defer></script>
     <script type="module" src="src/projects.js" defer></script>
     <script type="module" src="src/active_menu.js" defer></script>
+    <script type="module" src="src/type.js" defer></script>
   </head>
   <body>
     <!-- Header -->
@@ -62,16 +65,16 @@
     <!-- Main Contents -->
     <main>
       <!-- Home -->
-      <section id="home" class="section">
-        <div class="home__container">
+      <section id="home">
+        <div class="max-container home__container">
           <img
             class="home__avatar"
             src="images/profile.png"
             alt="W00K's profile"
           />
-          <h2 class="home__title">
+          <h2 class="home__title" aria-label="Hello, I'm a Future Coder Wook">
             Hello <br />
-            I&#39;m <strong class="home__title--strong">Future Coder</strong>,
+            I&#39;m a <strong class="home__title--strong">Future Coder</strong>,
             W00K!
           </h2>
           <p class="home__description">
