@@ -23,6 +23,11 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=IBM+Plex+Sans+KR:wght@500&family=Tilt+Neon&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- Font Awesome -->
     <script
       src="https://kit.fontawesome.com/7d8919f8b4.js"
@@ -77,9 +82,7 @@
             I&#39;m a <strong class="home__title--strong">Future Coder</strong>,
             W00K!
           </h2>
-          <p class="home__description">
-            I wanna be a SUUUUUUUUPER web developer!
-          </p>
+          <p class="home__description">두려움은 실천을 이길 수 없다</p>
           <a class="home__contact" href="#contact">Contact Me</a>
         </div>
       </section>
@@ -87,44 +90,50 @@
       <!-- About -->
       <section id="about" class="section max-container">
         <h2 class="title">About me</h2>
-        <p class="description">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab numquam
-          esse temporibus nam voluptates similique aspernatur quaerat expedita
-          dignissimos quidem est laborum eaque, possimus consequatur fugiat modi
-          maiores culpa placeat?
+        <p class="description about__description">
+          안녕하세요, 프론트엔드 엔지니어가 되기 위한 마라톤을 이어나가고 있는
+          이창욱이라고 합니다!
         </p>
         <ul class="majors">
           <li class="major">
-            <i class="fa-brands fa-html5 major__icon"></i>
+            <i class="fa-solid fa-code major__icon"></i>
             <p class="major__title">Front-end</p>
-            <p>HTML, CSS, Javascript, Typescript, React, Vue, Web APIs</p>
+            <p>HTML, CSS, Javascript, Typescript, React, Next.js</p>
           </li>
           <li class="major">
             <i class="fa-solid fa-mobile major__icon"></i>
             <p class="major__title">Mobile</p>
-            <p>IOS, Android, Flutter</p>
+            <p>React Native, Flutter</p>
           </li>
           <li class="major">
             <i class="fa-solid fa-server major__icon"></i>
             <p class="major__title">Back-end</p>
-            <p>Java, Javascript, NodeJS, Rest APIs, MySQL</p>
+            <p>Java, Node.js, Python</p>
           </li>
         </ul>
         <ul class="jobs">
           <li class="job">
-            <img src="images/jobs/dream.png" alt="dream logo" />
-            <div>
-              <p class="job__name">Dream Coder</p>
-              <p class="job__period">2023 Jan - Until now</p>
-            </div>
-          </li>
-          <li class="job">
             <img src="images/jobs/univ.png" alt="univ logo" />
             <div>
               <p class="job__name">
-                Bachelor's degree on business administration
+                Bachelor's degree on business administration - 영남대학교
+                경영학사
               </p>
               <p class="job__period">2017 Mar - 2024 Feb</p>
+            </div>
+          </li>
+          <li class="job">
+            <img src="images/jobs/kdata.png" alt="certification logo" />
+            <div>
+              <p class="job__name">Kdata's ADsP & SQLD</p>
+              <p class="job__period">2023 Aug - Sep</p>
+            </div>
+          </li>
+          <li class="job">
+            <img src="images/jobs/dream.png" alt="dream logo" />
+            <div>
+              <p class="job__name">Dream Coding</p>
+              <p class="job__period">2023 Jan - Until now</p>
             </div>
           </li>
         </ul>
@@ -186,7 +195,7 @@
                 </li>
                 <li class="bar">
                   <div class="bar__metadata">
-                    <span>NodeJS</span><span>60%</span>
+                    <span>Node.js</span><span>60%</span>
                   </div>
                   <div class="bar__bg">
                     <div class="bar__value" style="width: 60%"></div>
@@ -245,106 +254,111 @@
           </ul>
           <ul class="projects">
             <li class="project" data-type="front-end">
-              <a href="#" target="_blank">
+              <a href="https://devkoow.github.io/todo-list/" target="_blank">
                 <img
-                  src="images/projects/shoppingmall.png"
-                  alt="project shoppingmall"
+                  src="images/projects/to-do-list.png"
+                  alt="project todo-list"
                   class="project__img"
                 />
                 <div class="project__metadata">
                   <h3 class="project__title">Project #1</h3>
-                  <p>Clone Coding with HTML, CSS, JS</p>
+                  <p>투두리스트 : HTML CSS JS</p>
                 </div>
               </a>
             </li>
             <li class="project" data-type="front-end">
-              <a href="#" target="_blank">
-                <img
-                  src="images/projects/youtube.png"
-                  alt="project youtube"
+              <a
+                href="https://devkoow.github.io/counter-mosquito/"
+                target="_blank"
+                ><img
+                  src="images/projects/counter-mosquito.png"
+                  alt="project counter-mosquito"
                   class="project__img"
                 />
                 <div class="project__metadata">
                   <h3 class="project__title">Project #2</h3>
-                  <p>Clone Coding with HTML, CSS</p>
+                  <p>카운터모스키토 : HTML CSS JS DOM</p>
                 </div></a
               >
             </li>
             <li class="project" data-type="front-end">
-              <a href="#" target="_blank"
-                ><img
-                  src="images/projects/sample/project3.webp"
-                  alt="project3"
+              <a
+                href="https://devkoow.github.io/practice_filtering/"
+                target="_blank"
+              >
+                <img
+                  src="images/projects/shoppingmall.png"
+                  alt="project simple filtering"
                   class="project__img"
                 />
                 <div class="project__metadata">
                   <h3 class="project__title">Project #3</h3>
-                  <p>Sample</p>
+                  <p>필터링 연습 : HTML CSS JS DOM</p>
                 </div></a
               >
             </li>
             <li class="project" data-type="back-end">
               <a href="#" target="_blank"
                 ><img
-                  src="images/projects/sample/project4.webp"
+                  src="images/projects/waiting.png"
                   alt="project4"
                   class="project__img"
                 />
                 <div class="project__metadata">
                   <h3 class="project__title">Project #4</h3>
-                  <p>Sample</p>
+                  <p>!공사중!</p>
                 </div></a
               >
             </li>
             <li class="project" data-type="mobile">
               <a href="#" target="_blank"
                 ><img
-                  src="images/projects/sample/project5.webp"
+                  src="images/projects/waiting.png"
                   alt="project5"
                   class="project__img"
                 />
                 <div class="project__metadata">
                   <h3 class="project__title">Project #5</h3>
-                  <p>Sample</p>
+                  <p>!공사중!</p>
                 </div></a
               >
             </li>
             <li class="project" data-type="mobile">
               <a href="#" target="_blank"
                 ><img
-                  src="images/projects/sample/project6.webp"
+                  src="images/projects/waiting.png"
                   alt="project6"
                   class="project__img"
                 />
                 <div class="project__metadata">
                   <h3 class="project__title">Project #6</h3>
-                  <p>Sample</p>
+                  <p>!공사중!</p>
                 </div></a
               >
             </li>
             <li class="project" data-type="back-end">
               <a href="#" target="_blank"
                 ><img
-                  src="images/projects/sample/project7.webp"
+                  src="images/projects/waiting.png"
                   alt="project7"
                   class="project__img"
                 />
                 <div class="project__metadata">
                   <h3 class="project__title">Project #7</h3>
-                  <p>Sample</p>
+                  <p>!공사중!</p>
                 </div></a
               >
             </li>
             <li class="project" data-type="front-end">
               <a href="#" target="_blank"
                 ><img
-                  src="images/projects/sample/project8.webp"
+                  src="images/projects/waiting.png"
                   alt="project8"
                   class="project__img"
                 />
                 <div class="project__metadata">
                   <h3 class="project__title">Project #8</h3>
-                  <p>Sample</p>
+                  <p>!공사중!</p>
                 </div></a
               >
             </li>
@@ -435,11 +449,11 @@
           <li>
             <a
               class="contact__link"
-              href="https://koows-space.tistory.com/"
+              href="https://velog.io/@devkoow/series"
               target="_blank"
-              title="my tistory link"
+              title="my velog link"
             >
-              <i class="fa-solid fa-blog"></i>
+              <i class="fa-solid fa-v"></i>
             </a>
           </li>
         </ul>
