@@ -1,6 +1,6 @@
 # Wook's Portfolio Website 🤹‍♂️
 
-![thumbnail](images\README\thubmnail.png)
+![thumbnail](/images/README/thubmnail.png)
 
 ## 개발자를 꿈꾸는 Wook
 
@@ -24,7 +24,7 @@
 
 ### <span style='color: gold'>Home</span>
 
-![home](images\README\image-1.png)
+![home](/images/README/image-1.png)
 
 이 버튼을 누르시면 페이지 가장 하단의 Let's talk로 이동하게 됩니다!
 
@@ -32,7 +32,7 @@
 
 ### <span style='color: gold'>About me</span>
 
-![me](images\README\image-1.png)
+![me](/images/README/image-1.png)
 
 저의 이력을 한 눈에 담아놓은 공간입니다!
 
@@ -40,7 +40,7 @@
 
 ### <span style='color: gold'>My Skills</span>
 
-![skills](images\README\image-2.png)
+![skills](/images/README/image-2.png)
 
 저의 언어별 숙련도를 볼 수 있는 곳입니다!
 
@@ -48,7 +48,7 @@
 
 ### <span style='color: gold'>My Work</span> - <span style='color: #03ff74'>in progress...
 
-![works](images\README\image-3.png)
+![works](/images/README/image-3.png)
 
 ☆하이라이트☆
 
@@ -60,7 +60,7 @@
 
 ### <span style='color: gold'>TestiMonial</span> - <span style='color: #03ff74'>update soon...
 
-![testimonial](images\README\image-4.png)
+![testimonial](/images/README/image-4.png)
 
 스터디원들, 그리고 저의 주변 사람들이 표현한 저를 담아봤습니다!
 
