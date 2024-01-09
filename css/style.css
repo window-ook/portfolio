@@ -484,6 +484,10 @@ button:focus {
   align-items: center;
 }
 
+#testimonial .description {
+  font-family: 'Jua', sans-serif;
+}
+
 .testimonial:nth-child(even) .testimonial__img {
   order: 1;
 }
@@ -496,6 +500,7 @@ button:focus {
 }
 
 .testimonial__bubble {
+  font-family: 'Jua', sans-serif;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   padding: 1rem;
   border-radius: 8px;
@@ -503,7 +508,6 @@ button:focus {
 
 .testimonial__bubble__name {
   color: var(--color-accent);
-  font-weight: bold;
   filter: brightness(70%);
 }
 
