@@ -12,7 +12,7 @@
 - About me : 자격증 추가
 - Works : 포트폴리오 썸네일 변경
 
-## 🥞 스택
+## 🥞 Stack
 
 <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white">
 
