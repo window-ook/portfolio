@@ -1,6 +1,6 @@
 'use strict';
 
-// 카테고리 버튼이 클릭되면 카테고리별로 필터링 되는 로직
+// My Works 카테고리별 필터링
 const categories = document.querySelector('.categories');
 const projects = document.querySelectorAll('.project');
 const projectsContainer = document.querySelector('.projects');

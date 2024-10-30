@@ -32,7 +32,7 @@ function observerCallback(entries) {
       entry.intersectionRatio >= 0.95;
   });
   console.log(visibleSections);
-  console.log('무조건 라스트 섹션!!', selectLastone);
+  console.log('라스트 섹션!', selectLastone);
 
   const navIndex = selectLastone
     ? sectionIds.length - 1
